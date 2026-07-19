@@ -6,7 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos | Primeira Vaga TI</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:#f1f5f9;
+line-height:1.7;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#161b22;
+position:sticky;
+top:0;
+border-bottom:1px solid #30363d;
+}
+
+.logo h1{
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.container{
+max-width:1100px;
+margin:40px auto;
+padding:0 20px;
+}
+
+.container h1{
+text-align:center;
+font-size:40px;
+margin-bottom:20px;
+}
+
+.container>p{
+text-align:center;
+color:#94a3b8;
+margin-bottom:40px;
+}
+
+.card{
+background:#161b22;
+border:1px solid #30363d;
+border-radius:15px;
+padding:30px;
+margin-bottom:30px;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#38bdf8;
+box-shadow:0 20px 35px rgba(56,189,248,.25);
+}
+
+.card h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-top:20px;
+color:#22c55e;
+}
+
+.card ul{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:12px;
+list-style:none;
+margin-top:20px;
+}
+
+.card li{
+background:#0f172a;
+padding:14px;
+border-radius:10px;
+border-left:4px solid #38bdf8;
+transition:.3s;
+}
+
+.card li:hover{
+background:#1e293b;
+transform:translateX(6px);
+}
+.card li::before{
+content:"✔ ";
+color:#22c55e;
+font-weight:bold;
+
+hr{
+display:none;
+}
+
+a.botao{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:linear-gradient(90deg,#3b82f6,#06b6d4);
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+transition:.3s;
+}
+
+a.botao:hover{
+transform:translateY(-3px);
+}
+
+</style>
+    
 </head>
 
 <body>
@@ -41,7 +172,7 @@ Mesmo sem experiência profissional, um bom portfólio pode chamar a atenção d
 </p>
 
 <hr>
-
+<section class="card">
 <h2>📌 Projeto 1 — Landing Page</h2>
 
 <p>
@@ -65,9 +196,10 @@ Crie uma página moderna utilizando apenas HTML e CSS.
 <li>Menu de navegação</li>
 
 </ul>
-
+</section>
 <hr>
 
+<section class="card">
 <h2>📌 Projeto 2 — Calculadora</h2>
 
 <p>
@@ -89,9 +221,9 @@ Desenvolva uma calculadora funcional utilizando JavaScript.
 <li>Manipulação do DOM</li>
 
 </ul>
-
+</section>
 <hr>
-
+<section class="card">
 <h2>📌 Projeto 3 — Lista de Tarefas</h2>
 
 <p>
@@ -113,9 +245,9 @@ Crie um sistema para adicionar, concluir e remover tarefas.
 <li>DOM</li>
 
 </ul>
-
+</section>
 <hr>
-
+<section class="card">
 <h2>📌 Projeto 4 — Consumo de API</h2>
 
 <p>
@@ -137,9 +269,9 @@ Crie uma aplicação que consuma uma API pública.
 <li>Cotação de moedas</li>
 
 </ul>
-
+</section>
 <hr>
-
+<section class="card">
 <h2>📌 Projeto 5 — Sistema de Login</h2>
 
 <p>
@@ -159,9 +291,10 @@ Desenvolva uma tela de login com validação dos campos.
 <li>JavaScript</li>
 
 </ul>
-
+</section>
 <hr>
-
+<section class="card"></section>
+<section class="card">
 <h2>📌 Projeto 6 — CRUD</h2>
 
 <p>
@@ -183,9 +316,10 @@ Crie um sistema simples de cadastro de usuários.
 <li>Excluir</li>
 
 </ul>
-
+</section>
 <hr>
-
+</section>
+<section class="card">
 <h2>⭐ Dicas para o GitHub</h2>
 
 <ul>
@@ -215,7 +349,8 @@ A qualidade vale mais do que a quantidade.
 </p>
 
 <hr>
-
+</section>
+<section class="card">
 <h2>🚀 Desafio</h2>
 
 <p>
@@ -239,7 +374,7 @@ Crie uma Landing Page pessoal contendo:
 <li>Links para GitHub e LinkedIn</li>
 
 </ul>
-
+</section>
 <hr>
 
 <h2>➡ Próximo módulo</h2>
@@ -252,7 +387,7 @@ Depois de criar seus projetos, é hora de aprender como montar um currículo pro
 
 <p>
 
-<a href="curriculo.html">Ir para Currículo →</a>
+<a class="botao" href="curriculo.html">Ir para Currículo →</a>
 
 </p>
 

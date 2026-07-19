@@ -6,7 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrevistas | Primeira Vaga TI</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:#f1f5f9;
+line-height:1.7;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#161b22;
+position:sticky;
+top:0;
+border-bottom:1px solid #30363d;
+}
+
+.logo h1{
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.container{
+max-width:1100px;
+margin:40px auto;
+padding:0 20px;
+}
+
+.container h1{
+text-align:center;
+font-size:40px;
+margin-bottom:20px;
+}
+
+.container>p{
+text-align:center;
+color:#94a3b8;
+margin-bottom:40px;
+}
+
+.card{
+background:#161b22;
+border:1px solid #30363d;
+border-radius:15px;
+padding:30px;
+margin-bottom:30px;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#38bdf8;
+box-shadow:0 20px 35px rgba(56,189,248,.25);
+}
+
+.card h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-top:20px;
+color:#22c55e;
+}
+
+.card p{
+color:#cbd5e1;
+}
+
+.card ul,
+.card ol{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:12px;
+list-style:none;
+margin-top:20px;
+padding:0;
+}
+
+.card li{
+background:#0f172a;
+padding:14px;
+border-radius:10px;
+border-left:4px solid #38bdf8;
+transition:.3s;
+}
+
+.card li:hover{
+background:#1e293b;
+transform:translateX(6px);
+}
+.card li::before{
+content:"✔ ";
+color:#22c55e;
+font-weight:bold;
+}
+
+hr{
+display:none;
+}
+
+a.botao{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:linear-gradient(90deg,#3b82f6,#06b6d4);
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+transition:.3s;
+}
+
+a.botao:hover{
+transform:translateY(-3px);
+}
+
+</style>
 </head>
 
 <body>
@@ -41,7 +178,7 @@ Você não precisa saber tudo. O mais importante é demonstrar interesse, dedica
 </p>
 
 <hr>
-
+<section class="card">
 <h2>📌 Antes da entrevista</h2>
 
 <ul>
@@ -59,9 +196,10 @@ Você não precisa saber tudo. O mais importante é demonstrar interesse, dedica
 <li>Separe um ambiente silencioso.</li>
 
 </ul>
-
+</section>
 <hr>
 
+<section class="card">
 <h2>❓ Perguntas mais comuns</h2>
 
 <h3>1. Fale sobre você.</h3>
@@ -103,9 +241,10 @@ Apresente seus principais projetos e explique o que aprendeu em cada um.
 Explique seu método de estudo, prática e pesquisa.
 
 </p>
-
+</section>
 <hr>
 
+<section class="card">
 <h2>💻 Perguntas técnicas</h2>
 
 <ul>
@@ -125,9 +264,10 @@ Explique seu método de estudo, prática e pesquisa.
 <li>Explique um projeto que você desenvolveu.</li>
 
 </ul>
-
+</section>
 <hr>
 
+<section class="card">
 <h2>💡 Como responder</h2>
 
 <ul>
@@ -143,9 +283,10 @@ Explique seu método de estudo, prática e pesquisa.
 <li>Demonstre interesse em aprender.</li>
 
 </ul>
-
+</section>
 <hr>
 
+<section class="card">
 <h2>🚫 Erros que devem ser evitados</h2>
 
 <ul>
@@ -163,9 +304,10 @@ Explique seu método de estudo, prática e pesquisa.
 <li>Não conhecer o próprio currículo.</li>
 
 </ul>
-
+</section>
 <hr>
 
+<section class="card">
 <h2>⭐ Dicas para se destacar</h2>
 
 <ul>
@@ -181,9 +323,10 @@ Explique seu método de estudo, prática e pesquisa.
 <li>Demonstre curiosidade e vontade de crescer.</li>
 
 </ul>
-
+</section>
 <hr>
 
+<section class="card">
 <h2>🎯 No final da entrevista</h2>
 
 <p>
@@ -192,9 +335,10 @@ Agradeça pela oportunidade e pergunte quais serão os próximos passos do proce
 Isso demonstra interesse e profissionalismo.
 
 </p>
-
+</section>
 <hr>
 
+<section class="card">
 <h2>✅ Checklist</h2>
 
 <ul>
@@ -216,7 +360,7 @@ Isso demonstra interesse e profissionalismo.
 <li>☑ Pontualidade</li>
 
 </ul>
-
+</section>
 <hr>
 
 <h2>🚀 Próximo módulo</h2>
@@ -229,7 +373,7 @@ Depois de aprender sobre entrevistas, é hora de criar um perfil profissional no
 
 <p>
 
-<a href="linkedin.html">➡ Próximo módulo: LinkedIn</a>
+<a class="botao" href="../index.html">Voltar para o início →</a>
 
 </p>
 
